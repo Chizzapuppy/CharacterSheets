@@ -1,4 +1,4 @@
-<div class="containter-fluid">
+<div class="container-fluid">
     <div class="row no-gutters mb-2">
         <div class="col-sm-4 col-lg-3 pr-sm-1 mb-2">
             <div class="card bg-faded">
@@ -33,13 +33,13 @@
             <div class="card bg-faded mb-2">
                 <div class="card-block text-center">
                     <div class="d-flex justify-content-between">
-                        <div class="m-3" style="border: 1px solid black; border-radius: 50%; background: blue; min-width: 150px; height: 150px; width: 150px;">
+                        <div class="m-3 background-bubble">
                         </div>
-                        <div class="m-3" style="border: 1px solid black; border-radius: 50%; background: blue; min-width: 150px; height: 150px; width: 150px;">
+                        <div class="m-3 background-bubble">
                         </div>
-                        <div class="m-3" style="border: 1px solid black; border-radius: 50%; background: blue; min-width: 150px; height: 150px; width: 150px;">
+                        <div class="m-3 background-bubble">
                         </div>
-                        <div class="m-3" style="border: 1px solid black; border-radius: 50%; background: blue; min-width: 150px; height: 150px; width: 150px;">
+                        <div class="m-3 background-bubble">
                         </div>
                     </div>
                 </div>
@@ -101,12 +101,37 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row card bg-faded justify-content-between w-100">
+            <div class="card bg-faded">
+                <div class="card-header">
+                    <h3 class="text-uppercase text-muted"><a class="text-muted" data-toggle="collapse" href="#likesdislikes"><i class="fas fa-chevron-down"></i> Likes & Dislikes </a></h3>
+                </div>
+                <div id="likesdislikes" class="collapse card-block">
+                    <div class="d-flex justify-content-between w-100">
+                        <div class="w-100 d-flex flex-column">
+                            <h3 class="text-muted"> Likes </h3>
+                            <ul>
+                                <li> Sample 1 </li>
+                                <li> Sample 2 </li>
+                                <li> Sample 3 </li>
+                            </ul>
+                        </div>
+                        <div class="w-100 d-flex flex-column">
+                            <h3 class="text-muted"> Dislikes </h3>
+                            <ul>
+                                <li> Sample 1 </li>
+                                <li> Sample 2 </li>
+                                <li> Sample 3 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="d-flex flex-row card bg-faded justify-content-between w-100">
               <div class="w-100 d-flex flex-column">
                 <div class="d-flex align-items-center card-header">
-                  <h3 class="text-uppercase text-muted"><i class="fas fa-heart"></i> Likes</h3>
+                  <h3 class="text-uppercase text-muted"><i class="fas fa-heart"></i> Likes </h3>
                 </div>
-                  <div class="d-flex flex-column card-block">
+                  <div id="likes" class="card-block">
                     <ul>
                       <li> 1 </li>
                     </ul>
@@ -114,15 +139,15 @@
               </div>
               <div class="w-100 d-flex flex-column">
                 <div class="d-flex align-items-center card-header">
-                  <h3 class="text-uppercase text-muted"><i class="fas fa-times"></i> Dislikes</h3>
+                  <h3 class="text-uppercase text-muted"><i class="fas fa-times"></i> Dislikes </h3>
                 </div>
-                <div class="d-flex flex-column card-block">
+                <div id="dislikes" class="card-block">
                   <ul>
                     <li> 1 </li>
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- <div class="row no-gutters">
                 <div class="col-md-6 pr-md-1 mb-2">
                     <div class="card bg-faded">
