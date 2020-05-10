@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="A community for collaborative character creation and trading, worldbuilding and roleplay.">
+<meta name="csrf-token" content="Zm17TwZCa5isUKRr55RJ3d0DB9ihA71KLZSXyrdn">
+<meta name="user-id" content="0">
+<script src="/cdn-cgi/apps/head/-dhru4gQ4kmaJUr4Iomb6Y_UjIw.js"></script><link rel="icon" href="https://toyhou.se/img/favicon.ico">
+<title>Toyhouse</title>
+
+<link href="https://toyhou.se/css/main.css?cachebust=64" rel="stylesheet">
+<link href="https://toyhou.se/css/site_bootstrap.css?cachebust=64" rel="stylesheet">
+</head>
+<body class="page-body ">
+
+<div id="container" class="page-container ">
+<a id="top"></a>
+
+<nav class="navbar navbar-toggleable-sm navbar-inverse header" data-topbar role="navigation" id="header">
+
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#headerContent" aria-controls="headerContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+<a class="navbar-brand" href="https://toyhou.se">TOYHOU.SE</a>
+
+
+<div class="collapse navbar-collapse" id="headerContent">
+<div class="mr-auto"></div>
+
+<ul class="navbar-nav navbar-right">
+<li class="nav-item"><a class="nav-link" href="https://toyhou.se/~account/register">Register</a></li>
+<li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login">Login</a></li>
+</ul>
+
+</div>
+</nav>
+
+<div id="main" class="clearfix container-fluid main-container full-sidebar">
+<div class="row row-offcanvas row-offcanvas-left" data-sticky-wrap>
+<div class="col-sm-12  content-main" id="content">
+We can't find that page!
+</div>
+</div>
+</div>
+
+
+<div id="footer" class="text-muted text-center p-3 footer" data-sticky-footer>
+<div>
+<span class="mx-1">10:56 am</span>
+<span class="mx-1">&copy; cyancrows 2017</span>
+</div>
+<div>
+<span class="mx-2"><a href="https://toyhou.se/~about">About</a></span>
+<span class="mx-2"><a href="https://toyhou.se/~faq/general">FAQ</a></span>
+<span class="mx-2"><a href="https://toyhou.se/~rules">Rules</a></span>
+<span class="mx-2"><a href="https://toyhou.se/~tos">TOS</a></span>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default-label" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="modal-default-label"></h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body"></div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="user-character-selector" tabindex="-1" role="dialog" aria-labelledby="modal-test-label" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body row">
+<i class="fa fa-spinner fa-spin"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="user-image-selector" tabindex="-1" role="dialog" aria-labelledby="modal-test-label" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body row">
+<i class="fa fa-spinner fa-spin"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login-label" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="modal-login-label">Log In</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form method="POST" action="https://toyhou.se/~account/login" accept-charset="UTF-8" class="form-horizontal"><input name="_token" type="hidden" value="Zm17TwZCa5isUKRr55RJ3d0DB9ihA71KLZSXyrdn">
+<div class="form-group row">
+<label for="login_username" class="col-sm-3 col-form-label">Username</label>
+<div class="col-sm-9">
+<input class="form-control" name="login_username" type="text" id="login_username">
+</div>
+</div>
+<div class="form-group row">
+<label for="login_password" class="col-sm-3 col-form-label">Password</label>
+<div class="col-sm-9">
+<input class="form-control" name="login_password" type="password" value="" id="login_password">
+</div>
+</div>
+<div class="text-right">
+<input class="btn btn-primary" type="submit" value="Sign in">
+</div>
+<div class="text-center mt-3">
+<a href="https://toyhou.se/~account/reset"> Forgotten your password? </a>
+</div>
+</form> </div>
+</div>
+</div>
+</div>
+
+<script src="https://toyhou.se/js/sticky-footer.js"></script>
+<script src="https://toyhou.se/js/site.js?cachebust=31"></script>
+<script>
+            var modalCount = 0;
+            $('.modal').on('show.bs.modal',function(e){
+                modalCount++;
+            });
+            $('.modal').on('hidden.bs.modal',function(e){
+                modalCount--;
+                if(modalCount > 0){
+                    e.stopPropagation();
+                    $('body').addClass('modal-open');
+                }
+            });
+        </script>
+<script>
+            stickyFooter.init();
+        </script>
+</body>
+</html>
